@@ -1,0 +1,2 @@
+defmodule GenData do
+end
