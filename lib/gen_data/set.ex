@@ -366,16 +366,17 @@ defmodule GenData.Set do
 
   defimpl Collectable do
     def into(original) do
-    {original, fn
-      set, {:cont, x} ->
-        Set.put(set, x)
+      {original, fn
+        set, {:cont, x} ->
+          Set.put(set, x)
 
-      set, :done ->
-        set
+        set, :done ->
+          set
 
-      _, :halt ->
-        :ok
-    end}
+        _, :halt ->
+          :ok
+      end}
+    end
   end
 
   defimpl Enumerable do
