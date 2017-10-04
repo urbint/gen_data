@@ -10,25 +10,22 @@ defmodule GenData.Mixfile do
      deps: deps()]
   end
 
-  # Configuration for the OTP application
-  #
-  # Type "mix help compile.app" for more information
+
   def application do
-    [applications: [:logger]]
+    [extra_applications: [:logger]]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
+
   defp deps do
     [
-      {:mr_t, "~> 0.6.0", only: [:dev, :test]}
+      {:cortex, "~> 0.4", only: [:test, :dev], runtime: !ci_build?()},
+      {:shorter_maps, "~> 2.1"},
+      {:credo, "~> 0.8", only: [:dev, :test]},
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:ex_doc, ">= 0.0.0", only: [:dev]},
+      {:ex_dash, "~> 0.1", only: [:dev]},
     ]
   end
+
+  defp ci_build?, do: System.get_env("CI") != nil
 end
