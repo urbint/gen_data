@@ -7,7 +7,7 @@ defmodule GenData.Set do
 
   """
 
-  alias GenData.{Set,Hashable,Macros}
+  alias GenData.{Set, Hashable, Macros}
   require Macros
 
   Macros.require_impls [Hashable]
@@ -108,7 +108,7 @@ defmodule GenData.Set do
   # If the first set is less than twice the size of the second map,
   # it is fastest to re-accumulate items in the first set that are not
   # present in the second set.
-  def difference(%Set{}= set1, %Set{} = set2) do
+  def difference(%Set{} = set1, %Set{} = set2) do
     enforce_same_options!(set1, set2)
 
     do_difference(set1, set2)

@@ -16,6 +16,6 @@ defprotocol GenData.Hashable do
   def compute_hash(t, opts \\ [])
 end
 
-defimpl GenData.Hashable, for: [Integer,Float,BitString,Atom] do
+defimpl GenData.Hashable, for: [Integer, Float, BitString, Atom] do
   def compute_hash(num, _opts), do: num
 end

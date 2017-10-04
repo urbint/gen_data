@@ -1,0 +1,19 @@
+Unknown function 'Elixir.GenData.Comparable.Atom':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.BitString':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Float':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Function':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Integer':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.List':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Map':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.PID':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Port':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Reference':'__impl__'/1
+Unknown function 'Elixir.GenData.Comparable.Tuple':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.Function':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.List':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.Map':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.PID':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.Port':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.Reference':'__impl__'/1
+Unknown function 'Elixir.GenData.Hashable.Tuple':'__impl__'/1
+
